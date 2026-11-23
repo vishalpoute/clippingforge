@@ -1,0 +1,42 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+credentials*.json
+secrets*.json
+credentials.local.*
+secrets.local.*
+.npmrc.local
+.pypirc
+*.kdbx
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Local application databases, backups, and media
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+/db_backup/
+/storage/
+# Match download staging directories at the root and under services\api.
+**/data/downloads/
+*.part
+*.part-Frag*
+*.ytdl
+
+# Local runtime and generated files
+node_modules/
+.venv/
+.next/
+.next-*/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.tsbuildinfo
+*.log
+.pids
